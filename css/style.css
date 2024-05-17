@@ -1,9 +1,23 @@
 /* General Attributes */
 body {
-    padding: 1rem;
-    background-color: #222;
-    color: white;
+    background: linear-gradient(180deg, rgba(0,250,138,1) 15%, rgba(69,168,252,0.06766456582633051) 0%);
+    height: 100vh;
 }
 
+header {
+    height: 8vh;
+}
+.p-container {
+    background-color: cornsilk;
+    height: 80vh;
+}
+
+.my-w {
+    width: 65px;
+}
+
+.back-grey {
+    background-color: lightgrey;
+}
 
 
