@@ -1,23 +1,77 @@
-/* General Attributes */
-body {
-    background: linear-gradient(180deg, rgba(0,250,138,1) 15%, rgba(69,168,252,0.06766456582633051) 0%);
+/*********************** CSS UTILI ***********************/
+body{
+    background: rgb(0, 150, 136);
+    background: linear-gradient(180deg, rgba(0, 150, 136, 1) 20%, rgba(216, 219, 213, 1) 20%);
+}
+
+.h-100v {
     height: 100vh;
 }
 
-header {
-    height: 8vh;
+.my-fs {
+    font-size: 0.8rem;
 }
-.p-container {
-    background-color: cornsilk;
-    height: 80vh;
+
+.my-badge {
+    background-color: white;
+    border-radius: 100%;
+    height: 4rem;
+    line-height: 3.5rem;
 }
 
 .my-w {
-    width: 65px;
+    width: 60px;
 }
 
-.back-grey {
-    background-color: lightgrey;
+.w-95 {
+    width: 95%;
+}
+
+.img-psize {
+    width: 50%;
+}
+
+.hover:hover {
+    background-color: #E9EBEB;
+}
+
+i {
+    color: gray;
+}
+
+.white {
+    color: white;
+}
+i:hover {
+    color: black;
+}
+/********************** CSS MAIN-TOP ***********************/
+
+.main-top {
+    height: 70px;
+    background-color: #EAEAEA;
+}
+
+/***************************** CSS MAIN-BOTTOM ********************/
+.main-bottom {
+    height: calc(100vh - 2rem - 70px);
+}
+
+.search {
+    height: 130px;
+}
+
+.bg-blue {
+    background-color: #8EDAFC;
+}
+.received-message {
+    height: calc(100% - 50px);
+    background-image: url(../img/mine.jpg);
+}
+
+.send-message {
+    height: 50px;
+    background-color: #F3EEEA;
 }
 
 
