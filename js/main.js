@@ -173,6 +173,7 @@ createApp({
             hoursMessage: "12:00",
             userMessageInput : "",
             temp : 0,
+            searchContact: "",
             contacts
         }
     },
@@ -183,7 +184,6 @@ createApp({
         sendMessage() {
             this.contacts[this.userClicked].messages.push(
                 {
-                    date: Date.now(),
                     message: this.userMessageInput,
                     status: 'sent'
                 },
@@ -192,7 +192,6 @@ createApp({
             this.temp = setTimeout(() => {
                 this.contacts[this.userClicked].messages.push(
                     {
-                        date: Date.now(),
                         message: "Ciao",
                         status: 'received'
                     },

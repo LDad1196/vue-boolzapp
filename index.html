@@ -86,7 +86,7 @@
                                 <div class="col-12 p-0 py-2 text-center">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                     <input type="text" class="py-1 border-0 w-95" placeholder="Cerca una nuova chat"
-                                        aria-label="Invia un messaggio" aria-describedby="basic-addon1">
+                                        aria-label="Invia un messaggio" aria-describedby="basic-addon1" v-model="searchContact">
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                         <div class="contacts row m-0 overflow-y-scroll">
                             <div class="col-12 p-0">
                                 <template v-for="persona, i in contacts">
-                                    <div class="row m-0 py-1 hover" @click="clicked(i)">
+                                    <div class="row m-0 py-1 hover" @click="clicked(i)" v-show="persona.name.toLowerCase().match(searchContact)">
                                         <div class="col-3 p-0">
                                             <img :src="persona.avatar" alt="" class="img-psize rounded-circle">
                                         </div>
@@ -111,8 +111,10 @@
                             </div>
                         </div>
                     </div>
+                    
                     <!-- colonna da 7 che ha dentro ricezione messaggi e invio messaggi -->
                     <div class="col-7 p-0 h-100">
+                        
                         <!-- Ricezione messaggi -->
                         <div class="received-message row m-0 overflow-y-scroll overflow-x-no-scroll">
                             <div class="col-12 received-message-user p-3">
